@@ -17,16 +17,16 @@ int main() //Changed void to int so it returns 0
 	char answer='Y'; // change duble quotes to single quotes and added semicolon
 	while (answer=='y')
 	{
-		cout << "Enter expression" <<endl;
-		cin >> op2 >> operation >> op1;
+		cout << "Enter expression" << endl;
+		cin >> op1 >> operation >> op2; //switcherd op 1 and op2 placement
 		if (operation == "+") //Removed semicolons
-			cout << op1 << " + " << op2 >> " = " << op1 + op2 << endl;
+			cout << op1 << " + " << op2 << " = " << op1 + op2 << endl; //Changed >> to <<
 		if (operation == '-') //Removed semicolons
-			cout >> op1 << " - " << op2 << " = " << op1 - op2 << endl;
+			cout << op1 << " - " << op2 << " = " << op1 - op2 << endl;
 		if (operation == '*')
-			cout << op1 << " / " << op2 << " = " << op1 * op2 << endl
+			cout << op1 << " * " << op2 << " = " << op1 * op2 << endl; // Changed / to * and added ;
 		if (operation == '/')
-			cout << op1 << " * " << op2 << " = " << op1 / op2 << endl;
+			cout << op1 << " / " << op2 << " = " << op1 / op2 << endl; // Changed * to / and added 
 
 		cout << "Do you wish to evaluate another expression? " << endl;
 		cin >> answer;
